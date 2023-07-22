@@ -1,0 +1,63 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+}
+
+.container {
+  width: 420px;
+  background: #fff;
+  padding: 50px 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.container .progress-bar {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background: conic-gradient(#4070f4 3.6deg, #ededed 0deg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .progress-bar::before {
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.container .progress-bar .progress-value {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: #4070f4;
+}
+
+.container .text {
+  font-size: 30px;
+  font-weight: 500;
+  color: #606060;
+}
